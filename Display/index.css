@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 1px 4px;
+}
+
+caption {
+    padding: 10px;
+}

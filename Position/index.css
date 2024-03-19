@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    border: 1px solid gray;
+}
+
+.custom-section {
+    /* position: static; */
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+.p-relative {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: green;
+}
+
+.p-absolute {
+    position: absolute;
+    top: 10px;
+    /* right: 0; */
+    /* bottom: 100px; */
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+}

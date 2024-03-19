@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Display" property of CSS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>"Display" property of CSS and related values.</h1>
+    <table style="display: table;">
+        <caption style="display: table-caption;">
+            "display" հատկանիշը, պատասխանում է բրաուզերներում էլեմենտների ցուցադրման տեսակի համար։
+        </caption>
+        <tbody style="display: table-row-group;">
+            <tr style="display: table-row;">
+                <td>block</td>
+                <td>Բլոկային, բլոկ</td>
+            </tr>
+            <tr>
+                <td>flex</td>
+                <td>ճկուն, ճկվող</td>
+            </tr>
+            <tr>
+                <td>grid</td>
+                <td>ցանց</td>
+            </tr>
+            <tr>
+                <td>inline</td>
+                <td>տողային, մեկ գծի վրա</td>
+            </tr>
+            <tr>
+                <td>inline-block</td>
+                <td>տողա֊բլոկային</td>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>ոչինչ</td>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td>ցուցակ</td>
+            </tr>
+            <tr>
+                <td>table-row</td>
+                <td>ցուցակի տող</td>
+            </tr>
+            <tr>
+                <td>table-cell</td>
+                <td>ցուցակի սյունակ</td>
+            </tr>
+            <tr>
+                <td>table-caption</td>
+                <td>ցուցակի վերնագիր</td>
+            </tr>
+            <tr>
+                <td>list-item</td>
+                <td>ցանկի մասնիկ</td>
+            </tr>
+            <tr>
+                <td>inherit</td>
+                <td>ժառանգվող</td>
+            </tr>
+            <tr>
+                <td>initial</td>
+                <td>նախնական դրված</td>
+            </tr>
+            <tr>
+                <td>unset</td>
+                <td>հետ տեղադրել, լռելյայն (default) արժեքի</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 style="display: none;">block-level elements</h2>
+    <p>
+        Բլոկային էլեմենտները զբաղեցնում են ողջ հասանելի տարածքը լայնությամբ և յուրաքանչյուր էլեմենտ սկսվում է նոր տողից։
+        Բլոկայի էլեմենտներից են՝ div, p, h1-h6, ul,
+        ol, li, form, section, article, blockquote, etc.
+    </p>
+    <p>
+        Բլոկային էլեմենտները կարող են իրենց մեջ պարունակել՝ այլ "display" հատկանիշով էլեմենտներ, իչպես նաև բլոկային
+        էլեմենտներ։
+    </p>
+    <h2>inline֊level elements</h2>
+    <p>
+        Inline էլեմենտները, ի տարբերություն բլոկային էլեմենտների զբաղեցնում են իրենց պարունակության չափով տարածք և
+        հաջորդ նույնատիպ էլեմենտը շարունակվում է տվյալ էլեմենտի կողքից։ Inline էլեմենտներից են՝ span, a, strong, img,
+        input, label, button, etc.
+    </p>
+    <p>
+        Inline էլեմենտները իրենց մեջ չեն կարող պարունակել բլոկային էլեմենտներ։
+    </p>
+</body>
+
+</html>
