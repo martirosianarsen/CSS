@@ -1,7 +1,24 @@
+* {
+    margin: 0;
+}
+
+section {
+    padding: 5px;
+}
+
+hr {
+    margin: 5px;
+}
+
 h1 {
     text-align: center;
 }
 
+h2 {
+    /* padding: 0 10px; */
+}
+
+/* table  */
 table {
     width: 100%;
     border: 1px solid gray;
@@ -14,4 +31,82 @@ td {
 
 caption {
     padding: 10px;
+    border: 1px solid gray;
+}
+section p{
+    padding: 5px 0;
+}
+
+/* Flex container */
+.flex {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 5px;
+}
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* jsutify content */
+.jc-start {
+    justify-content: flex-start;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+.jc-around {
+    justify-content: space-around;
+}
+
+.jc-evenly {
+    justify-content: space-evenly;
+}
+
+/* align items */
+.ai-start {
+    align-items: flex-start;
+}
+
+.ai-end {
+    align-items: flex-end;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-baseline {
+    align-items: baseline;
+}
+
+.ai-stretch {
+    align-items: stretch;
+}
+
+/* colors */
+.bg-green {
+    background: green;
+}
+
+.bg-red {
+    background: red;
 }

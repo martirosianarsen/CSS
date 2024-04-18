@@ -4,95 +4,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Display" property of CSS</title>
+    <title>«display» property of CSS</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
-        <h1>"Display" հատկանիշը և իրեն առնչվող արժեքները</h1>
+        <h1>«display» հատկանիշը և իրեն առնչվող արժեքները</h1>
     </header>
-    <table style="display: table;">
-        <caption style="display: table-caption;">
-            "display" հատկանիշը, պատասխանում է բրաուզերներում էլեմենտների ցուցադրման տեսակի/ձևի համար։
-        </caption>
-        <tbody style="display: table-row-group;">
-            <tr style="display: table-row;">
-                <td>block</td>
-                <td>Բլոկային, բլոկ</td>
-            </tr>
-            <tr>
-                <td>flex</td>
-                <td>ճկուն, ճկվող</td>
-            </tr>
-            <tr>
-                <td>grid</td>
-                <td>ցանց</td>
-            </tr>
-            <tr>
-                <td>inline</td>
-                <td>տողային, մեկ գծի վրա</td>
-            </tr>
-            <tr>
-                <td>inline-block</td>
-                <td>տողա֊բլոկային</td>
-            </tr>
-            <tr>
-                <td>none</td>
-                <td>ոչինչ</td>
-            </tr>
-            <tr>
-                <td>table</td>
-                <td>աղյուսակ</td>
-            </tr>
-            <tr>
-                <td>table-row</td>
-                <td>աղյուսակի տող</td>
-            </tr>
-            <tr>
-                <td>table-cell</td>
-                <td>աղյուսակի սյունակ</td>
-            </tr>
-            <tr>
-                <td>table-caption</td>
-                <td>աղյուսակի վերնագիր</td>
-            </tr>
-            <tr>
-                <td>list-item</td>
-                <td>ցուցակի (մասնիկ, տարր)</td>
-            </tr>
-            <tr>
-                <td>inherit</td>
-                <td>ժառանգել, ժառանգում է "ծնող" էլեմենտի "display" արժեքը</td>
-            </tr>
-            <tr>
-                <td>initial</td>
-                <td>նախադրված, նախնական դրված</td>
-            </tr>
-            <tr>
-                <td>unset</td>
-                <td>հետ տեղադրել, լռելյայն (default) արժեքի</td>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <table>
+            <caption>
+                «display» հատկանիշը, պատասխանում է բրաուզերներում էլեմենտների ցուցադրման տեսակի/ձևի համար։
+            </caption>
+            <tbody>
+                <tr>
+                    <td>block</td>
+                    <td>Բլոկային, բլոկ</td>
+                </tr>
+                <tr>
+                    <td>flex</td>
+                    <td>ճկուն, ճկվող</td>
+                </tr>
+                <tr>
+                    <td>grid</td>
+                    <td>ցանց</td>
+                </tr>
+                <tr>
+                    <td>inline</td>
+                    <td>տողային, մեկ գծի վրա</td>
+                </tr>
+                <tr>
+                    <td>inline-block</td>
+                    <td>տողա֊բլոկային</td>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>ոչինչ</td>
+                </tr>
+                <tr>
+                    <td>table</td>
+                    <td>աղյուսակ</td>
+                </tr>
+                <tr>
+                    <td>table-row</td>
+                    <td>աղյուսակի տող</td>
+                </tr>
+                <tr>
+                    <td>table-cell</td>
+                    <td>աղյուսակի սյունակ</td>
+                </tr>
+                <tr>
+                    <td>table-caption</td>
+                    <td>աղյուսակի վերնագիր</td>
+                </tr>
+                <tr>
+                    <td>list-item</td>
+                    <td>ցուցակի (մասնիկ, տարր)</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td>ժառանգել, ժառանգում է «ծնող» էլեմենտի «display» արժեքը</td>
+                </tr>
+                <tr>
+                    <td>initial</td>
+                    <td>նախադրված, նախնական դրված</td>
+                </tr>
+                <tr>
+                    <td>unset</td>
+                    <td>հետ տեղադրել, լռելյայն (default) արժեքի</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <h2>block-level elements</h2>
-    <p>
-        Բլոկային էլեմենտները զբաղեցնում են ողջ հասանելի տարածքը լայնությամբ և յուրաքանչյուր էլեմենտ սկսվում է նոր տողից։
-        Բլոկայի էլեմենտներից են՝ div, p, h1-h6, ul, ol, li, form, section, article, blockquote, etc.
-    </p>
-    <p>
-        Բլոկային էլեմենտները կարող են իրենց մեջ պարունակել, "display" հատկանիշի՝ ցանկացած արժեքներով էլեմենտներ։
-    </p>
-    <h2>inline֊level elements</h2>
-    <p>
-        Inline էլեմենտները, ի տարբերություն բլոկային էլեմենտների զբաղեցնում են իրենց պարունակության չափով տարածք և
-        հաջորդ նույնատիպ էլեմենտը շարունակվում է տվյալ էլեմենտի կողքից։ Inline էլեմենտներից են՝ span, a, strong, img,
-        input, label, button, etc.
-    </p>
-    <p>
-        Inline էլեմենտները իրենց մեջ չեն կարող պարունակել բլոկային էլեմենտներ։
-    </p>
+    <section>
+        <h2>block</h2>
+        <p>
+            Բլոկային էլեմենտները զբաղեցնում են ողջ հասանելի տարածքը լայնությամբ և յուրաքանչյուր էլեմենտ սկսվում է նոր
+            տողից։ Բլոկային էլեմենտներից են՝ <b>div</b>, <b>p</b>, <b>h1-h6</b>, <b>ul</b>, <b>ol</b>, <b>li</b>,
+            <b>form</b>,
+            <b>section</b>, <b>article</b>, <b>blockquote</b> և այլն։
+        </p>
+        <p>
+            Բլոկային էլեմենտները կարող են իրենց մեջ պարունակել, «display» հատկանիշի՝ ցանկացած արժեքներով
+            էլեմենտներ։
+        </p>
+    </section>
+
+    <section>
+        <h2>flex (items direction and alignment)</h2>
+        <p>
+            «Ֆլեքս» հատկանշային արժեքը, որը թարգմանվում է ճկուն, այն թույլ է տալիս ստեղծել՝ կոնտեյներ, որտեղ կարելի է
+            հեշտությամբ դասավորել էլեմենտները` հիմնական առանցքի վրա։
+        </p>
+        <p>
+            «Ֆլեքս» էլեմենտը ունի 2 հիմնական առանցք, ինչի շնորհիվ՝ իր մեջ ներդրված էլեմենտները, կարող են դասավորվել 2
+            ուղությամբ՝ հորիզոնական և ուղահայաց։
+        </p>
+        <p>
+            Ներդրած էլեմենտների ուղությունը կառավարվում է՝ <b>flex-direction</b> հատկանիշով, որն ունի հետևյալ արժեքները՝
+            <b>row</b>, <b>row-reverse</b>, <b>column</b>, <b>column-reverse</b>։
+        </p>
+        <p>
+            Բացի ուղությունից և հերթականություից, կարելի է նաև համահարթեցնել ներդրված էլեմենտները, այլ կերպ ասած` որոշել
+            էլեմենտների տեղը առանցքի վրա։
+        </p>
+        <p>
+            Համահարթեցումը կատարվում է՝ <b>justify-content</b> և <b>align-items</b> հատկանիշներով, որոնք իրենց հերթին
+            ունեն, հետևյալ արժեքները`
+        </p>
+        <table>
+            <caption>
+                justify-content հատկանիշը
+            </caption>
+            <tbody>
+                <tr>
+                    <td>flex-start</td>
+                    <td>
+                        <p>
+                            Սա նշանակում է, որ էլեմենտները առանցքի վրա կդասավորվեն իրար հետևից, մեկ շարքի վրա, որտեղ
+                            առանցքի սկզբնական կետը, համարվում է՝ ձախակողմյան հատվածը։ Այսինքն էլեմենտները կշարվեն ձախից
+                            աջ` ըստ հերթականության։
+                        </p>
+                        <div class="flex jc-start">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>flex-end</td>
+                    <td>
+                        <p>
+                            flex-end արժեքը flex-start արժեքի ճիշտ հակառակ գործողությունն է կատարում։ Հավասարեցնելով
+                            էլեմենտները, աջից՝ ձախ։
+                        </p>
+                        <div class="flex jc-end">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>center</td>
+                    <td>
+                        <p>
+                            Կենտրոն՝ էլեմենտները այս պարագայում կդասավորվեն «Flex container-ի» առանցքի կենտրոնում։
+                        </p>
+                        <div class="flex jc-center">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>space-between</td>
+                    <td>
+                        <p>
+                            Շարում է էլեմենտները, իրարից հավասարաչափ հեռավորության վրա։
+                        </p>
+                        <div class="flex jc-between">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>space-around</td>
+                    <td>
+                        <p>
+                            Շարում է էլեմենտները իրարից հավասարաչափ հեռավորության վրա, թողնելով սկզբի և վերջի
+                            հատվածներում որոշակի տարածություն։ Այդ տարածությունը հավասար է մյուս էլեմենտներից ընկած
+                            տարածության 1/2-ի չափով։
+                        </p>
+                        <div class="flex jc-around">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>space-evenly</td>
+                    <td>
+                        <p>
+                            Շարում է էլեմենտները իրարից հավասարաչափ հեռավորության վրա, ինչպես նաև՝ թողնելով սկզբի և
+                            վերջի
+                            հատվածներում, նույնպիսի հեռավորություն։
+                        </p>
+                        <div class="flex jc-evenly">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <caption style="border: 1px solid gray;">
+                    align-items
+                </caption>
+                <tr>
+                    <td>stretch</td>
+                    <td>
+                        <p>
+                            Սա Flex container-ի նախադրված արժեքն է և այն շարում է ներդիված էլեմենտները, տվյալ կոնտեյների
+                            ողջ երկայնքով։ Տողայինի դեպքում ձախից աջ, սյունակայինի դեպքում վերևից ներքև։
+                        </p>
+                        <div class="flex ai-stretch">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>baseline</td>
+                    <td>
+                        <p>
+                            հավասարեցնում է էլեմենտները՝ նույն առանցքի և մեկ գծի վրա, սա հարմար է օգտագործել, տեքստը
+                            համահարթեցնելու՝ այլ օբյեկտների հետ։
+                        </p>
+                        <div class="flex ai-baseline">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                            text
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>flex-start</td>
+                    <td>
+                        <div class="flex ai-start">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>flex-end</td>
+                    <td>
+                        <div class="flex ai-end">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>center</td>
+                    <td>
+                        <div class="flex ai-center">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <b>flex-direction</b> հատկանիշից կախված <b>justify-content</b> և <b>align-items</b> հատկանիշները իրենց
+            դրսեվորում են յուրովի՝ row (տող)֊այինի դեպքում <b>justify-content</b>-ը համարթեցնում է հորիզոնական
+            ուղությամբ, իսկ column (սյունակ)֊ային ուղության դեպքում ուղահայաց։ align-items֊ը նույնությամբ դրսեվորում է
+            ճիշտ հակառակ պահվացքը։
+        </p>
+    </section>
+    <section>
+        <h2>inline</h2>
+        <p>
+            <b>Inline</b> էլեմենտները, ի տարբերություն բլոկային էլեմենտների զբաղեցնում են իրենց պարունակության չափով
+            տարածք և
+            հաջորդ նույնատիպ էլեմենտը շարունակվում է տվյալ էլեմենտի կողքից։ <b>Inline</b> էլեմենտներից են՝ <b>span</b>,
+            <b>a</b>, <b>strong</b>,
+            <b>img</b>, <b>input</b>, <b>label</b>, <b>button</b> և այլն։
+        </p>
+        <p>
+            <b>Inline</b> էլեմենտները իրենց մեջ չեն կարող պարունակել բլոկային էլեմենտներ։
+        </p>
+    </section>
 </body>
 
 </html>
